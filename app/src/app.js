@@ -1,4 +1,5 @@
 import {Produit} from '../produit/produit.component';
+import '../../node_modules/bootstrap/dist/js/bootstrap.min.js';
 
 
 
