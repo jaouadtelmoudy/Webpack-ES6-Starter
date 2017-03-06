@@ -63,23 +63,11 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _produit = __webpack_require__(1);
-
-var p = new _produit.Produit("111111", "Lait", "1");
-console.log(p.service.getAllProduit());
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -148,6 +136,7 @@ var Produit = exports.Produit = function () {
 }();
 
 /***/ }),
+/* 1 */,
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -187,6 +176,20 @@ var ProduitService = exports.ProduitService = function () {
 
     return ProduitService;
 }();
+
+/***/ }),
+/* 3 */,
+/* 4 */,
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _produit = __webpack_require__(0);
+
+var p = new _produit.Produit("111111", "Lait", "1");
+console.log(p.service.getAllProduit());
 
 /***/ })
 /******/ ]);
