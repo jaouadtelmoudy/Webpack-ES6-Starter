@@ -3,12 +3,11 @@ import '../../node_modules/bootstrap/dist/js/bootstrap.min.js';
 
 
 
-let p=new Produit("111111","Lait","1");
+let p=new Produit();
 let result=p.service.getAllProduit();
 
 var _html="";
 for(let i in result){
-    console.log(result[i].prix);
     _html+=`<div class="col-sm-4 col-lg-4 col-md-4">
                 <div class="thumbnail">
                         <img src="${result[i].photo}" alt="">
@@ -31,5 +30,4 @@ for(let i in result){
           </div>
         `;
 }
-
 document.getElementById("contenu").innerHTML=_html;
