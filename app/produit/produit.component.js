@@ -30,8 +30,5 @@ export class Produit{
     setPrix(prix){
         this.prix=prix;
     }
-    
-
-    
 
 }
